@@ -5,7 +5,7 @@ namespace StorageAccount.Repository
 {
     public class FileStorage
     {
-        public static string connectionString="DefaultEndpointsProtocol=https;AccountName=sasistorageacc;AccountKey=Q6VR3zmLqV4mv7d0qlEPTbyKVBIz0E38x2+knjQYpEomzwevsAXXxMv7MmeDDlB9wRLmPK8529x8+AStzxmmTw==;EndpointSuffix=core.windows.net";
+        public static string connectionString="";
         static ShareServiceClient shareServiceClient=null;
         public static async Task CreateFile(string fileName){
             try{
