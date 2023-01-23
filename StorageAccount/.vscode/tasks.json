@@ -46,12 +46,12 @@
             "dockerBuild": {
                 "tag": "storageaccount:dev",
                 "target": "base",
-                "dockerfile": "${workspaceFolder}/StorageAccount/Dockerfile",
+                "dockerfile": "${workspaceFolder}/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
+                "appProject": "${workspaceFolder}/StorageAccount.csproj"
             }
         },
         {
@@ -62,12 +62,12 @@
             ],
             "dockerBuild": {
                 "tag": "storageaccount:latest",
-                "dockerfile": "${workspaceFolder}/StorageAccount/Dockerfile",
+                "dockerfile": "${workspaceFolder}/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
+                "appProject": "${workspaceFolder}/StorageAccount.csproj"
             }
         },
         {
@@ -80,7 +80,7 @@
                 "os": "Windows"
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj",
+                "appProject": "${workspaceFolder}/StorageAccount.csproj",
                 "enableDebugging": true
             }
         },
@@ -94,7 +94,7 @@
                 "os": "Windows"
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
+                "appProject": "${workspaceFolder}/StorageAccount.csproj"
             }
         }
     ]
